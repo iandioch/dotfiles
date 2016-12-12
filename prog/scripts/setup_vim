@@ -7,5 +7,6 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 #install plugins through pathogen
 cd ~/.vim/bundle
 git clone https://github.com/vimwiki/vimwiki.git
+git clone https://github.com/tpope/vim-sleuth.git
 
 echo "Don't forget to run :Helptags"
