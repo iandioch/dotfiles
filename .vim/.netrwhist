@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/sys/class/backlight/radeon_bl0'
-let g:netrw_dirhist_2='/etc/netctl'
-let g:netrw_dirhist_3='/home/attack/prog/dipla/docs/services'
-let g:netrw_dirhist_4='/home/attack/prog/dipla/docs'
-let g:netrw_dirhist_5='/home/attack/prog/dipla/docs/services'
