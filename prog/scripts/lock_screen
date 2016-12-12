@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+scrot /tmp/background.png
+i3lock -i /tmp/background.png

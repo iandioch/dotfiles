@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+LOC=$(date +"/home/attack/img/%Y_%m_%d_%H_%M_%S.png")
+scrot "$@" $LOC
+#
+#if [ $# -e 0 ]; then
+	#scrot $LOC
+#elif [ "$1" == "-s" ]; then
+	#scrot -s $LOC
+#fi
+
+echo $LOC
+
+i3-nagbar -m "Image saved to $LOC" -b "Open with firefox" "firefox $LOC" -b "Open with feh" "feh -F $LOC"

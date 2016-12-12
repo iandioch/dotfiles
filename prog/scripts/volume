@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+if [ -z "$1" ];
+then
+	amixer get Master | grep "%" | cut -d' ' -f4,7;
+else
+	amixer set Master $1% >> /dev/null;
+fi

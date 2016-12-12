@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import io
+
+with open('/sys/class/power_supply/BAT0/energy_now', 'r') as now:
+	energy_now = int(now.readline())
+	with open('/sys/class/power_supply/BAT0/energy_full', 'r') as full:
+		energy_full = int(full.readline())
+		print('Energy:       {:>10}'.format(energy_now))
+		print('Max:          {:>10}'.format(energy_full))
+		print('Percent:      {:>9.2f}%'.format(energy_now*100/energy_full))
